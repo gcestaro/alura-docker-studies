@@ -1,17 +1,16 @@
 # alura-docker-studies
 
-Por que são mais leves?
-- Processos no SO do host
-- Imagem read only reutilizável. Cria-se uma camada read write para cada container, mas reutiliza a base da imagem
+Why lighter than VMs?
+- Running processes in OS's host
+- Read only image reusable. Every container has its own read write layer, but share image's read only basis.
 
-Como garantem o isolamento? Como funcionam sem instalar um SO? Como fuca 
-
-- PID: Isolamento dos processos que correm no container
-- NET: Isolamento das interfaces de rede
-- IPC: Isolamento da comunicação entre processos e memória compartilhada
-- MNT: Isolamento do sistema de arquivos / ponto de montagem
-- UTS: Isolamento do kernel, permite ao container agir como se fosse outro host
-- Namespaces: isolamento entre os containers e o host
+How to ensure isolation? How work without installing a OS?
+- PID: Isolation of process that run in the container
+- NET: Isolation of network interfaces
+- IPC: Isolation of processes communication and shared memory
+- MNT: Isolation of file system / mount points
+- UTS: Isolation of kernel, allows containers to act as another host
+- Namespaces: Isolation between containers and the host
 
 MAC Installation: https://docs.docker.com/desktop/install/mac-install/
 
