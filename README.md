@@ -132,4 +132,7 @@ Alura example:
 
 Docker-compose:
 - Docs: https://docs.docker.com/compose/
-- 
+- Run in the same folder docker-compose.yml is defined: ```docker-compose up```
+  - Background: ```docker-compose -d up```
+- ```docker-compose ps```
+- ```docker-compose down```
